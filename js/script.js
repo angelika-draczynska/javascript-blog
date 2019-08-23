@@ -6,6 +6,7 @@ const templates = {
   tagCloudLink: Handlebars.compile(document.querySelector('#template-tag-cloud-link').innerHTML),
   authorColumnLink: Handlebars.compile(document.querySelector('#template-author-column-link').innerHTML)
 }
+{
 
 function titleClickHandler(event) {
   event.preventDefault();
@@ -39,7 +40,7 @@ function titleClickHandler(event) {
 }
 
 
-{
+
   const optArticleSelector = '.post';
   const optTitleSelector = '.post-title';
   const optTitleListSelector = '.titles';
@@ -49,6 +50,23 @@ function titleClickHandler(event) {
   const optCloudClassCount = 5;
   const optCloudClassPrefix = 'tag-size-';
   const optAuthorsListSelector = '.authors';
+
+  const articlesArray = [
+    {
+      id: 'article-1',
+      author: 'Marion Berry',
+      tags: 'meat fit dinner',
+      content: 'blabla'
+    },
+    {
+      id: 'article-2',
+      author: 'Marion Berry',
+      tags: 'meat fit dinner',
+      content: 'blablablablabla'
+    },
+  ];
+
+  createPosts();
 
   function generateTitleLinks(customSelector = '') {
 
@@ -322,4 +340,30 @@ function titleClickHandler(event) {
     generateTitleLinks();
   });
 
+  function createPosts() {
+    const postDiv = document.querySelector('.posts');
+    for (let i = 0; i < articlesArray.length; i++) {
+      const mainArticleContainer = document.createElement('article');
+      const postTitleDiv = document.createElement('h3');
+      const postAuthorDiv = document.createElement('div');
+      const postContentDiv = document.createElement('div');
+      const tagDiv = document.createElement('div');
+      postAuthorDiv.className = 'post-author';
+      postContentDiv.className = 'post-content';
+      postTitleDiv.className = 'post-title';
+      tagDiv.className = 'post-tags';
+      tagDiv.innerHTML = '<p><strong>Tags:</strong></p>';
+      mainArticleContainer.className = 'post';
+      mainArticleContainer.id = articlesArray[i].id;
+      mainArticleContainer.setAttribute('data-tags', articlesArray[i].tags);
+      mainArticleContainer.setAttribute('data-author', articlesArray[i].author);
+      postContentDiv.innerHTML = articlesArray[i].content;
+      mainArticleContainer.appendChild(postTitleDiv);
+      mainArticleContainer.appendChild(postAuthorDiv);
+      mainArticleContainer.appendChild(postContentDiv);
+      postDiv.appendChild(mainArticleContainer);
+      postDiv.appendChild(tagDiv);
+    console.log(mainArticleContainer);
+    }
+  }
 }
