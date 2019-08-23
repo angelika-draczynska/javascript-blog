@@ -54,16 +54,75 @@ function titleClickHandler(event) {
   const articlesArray = [
     {
       id: 'article-1',
-      author: 'Marion Berry',
-      tags: 'meat fit dinner',
-      content: 'blabla'
+      author: 'Tom Hanks',
+      tags: 'drama comedy',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum neque id nunc sollicitudin dictum. Etiam iaculis volutpat lectus quis viverra. Pellentesque sit amet porttitor felis, in tristique neque. Pellentesque eleifend dolor vitae est pretium, in tincidunt nisi feugiat. Etiam gravida dictum felis, et convallis sapien sagittis suscipit. Pellentesque tincidunt turpis quis aliquet aliquam. Proin sed facilisis massa. Maecenas gravida justo sit amet sapien malesuada pellentesque. Aenean eget elit vitae dui bibendum vehicula nec ac justo. Aliquam facilisis lorem tellus, ut porta sem dignissim vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus at nulla vel auctor. Fusce lorem turpis, sodales sed auctor vitae, tempor sed mauris. Sed nec convallis massa, eu interdum massa. Etiam ut efficitur massa, vitae varius nisi. Phasellus id metus a orci elementum porttitor a vitae nibh. ',
+      title: 'Article 1'
     },
     {
       id: 'article-2',
       author: 'Marion Berry',
-      tags: 'meat fit dinner',
-      content: 'blablablablabla'
+      tags: 'comedy musical',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum neque id nunc sollicitudin dictum. Etiam iaculis volutpat lectus quis viverra. Pellentesque sit amet porttitor felis, in tristique neque. Pellentesque eleifend dolor vitae est pretium, in tincidunt nisi feugiat. Etiam gravida dictum felis, et convallis sapien sagittis suscipit. Pellentesque tincidunt turpis quis aliquet aliquam. Proin sed facilisis massa. Maecenas gravida justo sit amet sapien malesuada pellentesque. Aenean eget elit vitae dui bibendum vehicula nec ac justo. Aliquam facilisis lorem tellus, ut porta sem dignissim vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus at nulla vel auctor. Fusce lorem turpis, sodales sed auctor vitae, tempor sed mauris. Sed nec convallis massa, eu interdum massa. Etiam ut efficitur massa, vitae varius nisi. Phasellus id metus a orci elementum porttitor a vitae nibh. ',
+      title: 'Article 2',
     },
+    {
+      id: 'article-3',
+      author: 'Leonardo Di Caprio',
+      tags: 'action horror',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum neque id nunc sollicitudin dictum. Etiam iaculis volutpat lectus quis viverra. Pellentesque sit amet porttitor felis, in tristique neque. Pellentesque eleifend dolor vitae est pretium, in tincidunt nisi feugiat. Etiam gravida dictum felis, et convallis sapien sagittis suscipit. Pellentesque tincidunt turpis quis aliquet aliquam. Proin sed facilisis massa. Maecenas gravida justo sit amet sapien malesuada pellentesque. Aenean eget elit vitae dui bibendum vehicula nec ac justo. Aliquam facilisis lorem tellus, ut porta sem dignissim vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus at nulla vel auctor. Fusce lorem turpis, sodales sed auctor vitae, tempor sed mauris. Sed nec convallis massa, eu interdum massa. Etiam ut efficitur massa, vitae varius nisi. Phasellus id metus a orci elementum porttitor a vitae nibh. ',
+      title: 'Article 3',
+    },
+    {
+      id: 'article-4',
+      author: 'Al Pacino',
+      tags: 'horror',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum neque id nunc sollicitudin dictum. Etiam iaculis volutpat lectus quis viverra. Pellentesque sit amet porttitor felis, in tristique neque. Pellentesque eleifend dolor vitae est pretium, in tincidunt nisi feugiat. Etiam gravida dictum felis, et convallis sapien sagittis suscipit. Pellentesque tincidunt turpis quis aliquet aliquam. Proin sed facilisis massa. Maecenas gravida justo sit amet sapien malesuada pellentesque. Aenean eget elit vitae dui bibendum vehicula nec ac justo. Aliquam facilisis lorem tellus, ut porta sem dignissim vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus at nulla vel auctor. Fusce lorem turpis, sodales sed auctor vitae, tempor sed mauris. Sed nec convallis massa, eu interdum massa. Etiam ut efficitur massa, vitae varius nisi. Phasellus id metus a orci elementum porttitor a vitae nibh. ',
+      title: 'Article 4',
+    },
+    {
+      id: 'article-5',
+      author: 'Marion Berry',
+      tags: 'horror drama',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum neque id nunc sollicitudin dictum. Etiam iaculis volutpat lectus quis viverra. Pellentesque sit amet porttitor felis, in tristique neque. Pellentesque eleifend dolor vitae est pretium, in tincidunt nisi feugiat. Etiam gravida dictum felis, et convallis sapien sagittis suscipit. Pellentesque tincidunt turpis quis aliquet aliquam. Proin sed facilisis massa. Maecenas gravida justo sit amet sapien malesuada pellentesque. Aenean eget elit vitae dui bibendum vehicula nec ac justo. Aliquam facilisis lorem tellus, ut porta sem dignissim vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus at nulla vel auctor. Fusce lorem turpis, sodales sed auctor vitae, tempor sed mauris. Sed nec convallis massa, eu interdum massa. Etiam ut efficitur massa, vitae varius nisi. Phasellus id metus a orci elementum porttitor a vitae nibh. ',
+      title: 'Article 5',
+    },
+    {
+      id: 'article-6',
+      author: 'Emilia Clarke',
+      tags: 'romantic drama',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum neque id nunc sollicitudin dictum. Etiam iaculis volutpat lectus quis viverra. Pellentesque sit amet porttitor felis, in tristique neque. Pellentesque eleifend dolor vitae est pretium, in tincidunt nisi feugiat. Etiam gravida dictum felis, et convallis sapien sagittis suscipit. Pellentesque tincidunt turpis quis aliquet aliquam. Proin sed facilisis massa. Maecenas gravida justo sit amet sapien malesuada pellentesque. Aenean eget elit vitae dui bibendum vehicula nec ac justo. Aliquam facilisis lorem tellus, ut porta sem dignissim vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus at nulla vel auctor. Fusce lorem turpis, sodales sed auctor vitae, tempor sed mauris. Sed nec convallis massa, eu interdum massa. Etiam ut efficitur massa, vitae varius nisi. Phasellus id metus a orci elementum porttitor a vitae nibh. ',
+      title: 'Article 6',
+    },
+    {
+      id: 'article-7',
+      author: 'Emma Stone',
+      tags: 'musical comedy romantic',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum neque id nunc sollicitudin dictum. Etiam iaculis volutpat lectus quis viverra. Pellentesque sit amet porttitor felis, in tristique neque. Pellentesque eleifend dolor vitae est pretium, in tincidunt nisi feugiat. Etiam gravida dictum felis, et convallis sapien sagittis suscipit. Pellentesque tincidunt turpis quis aliquet aliquam. Proin sed facilisis massa. Maecenas gravida justo sit amet sapien malesuada pellentesque. Aenean eget elit vitae dui bibendum vehicula nec ac justo. Aliquam facilisis lorem tellus, ut porta sem dignissim vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus at nulla vel auctor. Fusce lorem turpis, sodales sed auctor vitae, tempor sed mauris. Sed nec convallis massa, eu interdum massa. Etiam ut efficitur massa, vitae varius nisi. Phasellus id metus a orci elementum porttitor a vitae nibh. ',
+      title: 'Article 7',
+    },
+    {
+      id: 'article-8',
+      author: 'Emilia Clarke',
+      tags: 'horror comedy',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum neque id nunc sollicitudin dictum. Etiam iaculis volutpat lectus quis viverra. Pellentesque sit amet porttitor felis, in tristique neque. Pellentesque eleifend dolor vitae est pretium, in tincidunt nisi feugiat. Etiam gravida dictum felis, et convallis sapien sagittis suscipit. Pellentesque tincidunt turpis quis aliquet aliquam. Proin sed facilisis massa. Maecenas gravida justo sit amet sapien malesuada pellentesque. Aenean eget elit vitae dui bibendum vehicula nec ac justo. Aliquam facilisis lorem tellus, ut porta sem dignissim vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus at nulla vel auctor. Fusce lorem turpis, sodales sed auctor vitae, tempor sed mauris. Sed nec convallis massa, eu interdum massa. Etiam ut efficitur massa, vitae varius nisi. Phasellus id metus a orci elementum porttitor a vitae nibh. ',
+      title: 'Article 8',
+    },
+    {
+      id: 'article-9',
+      author: 'Emilia Clarke',
+      tags: 'drama horror',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum neque id nunc sollicitudin dictum. Etiam iaculis volutpat lectus quis viverra. Pellentesque sit amet porttitor felis, in tristique neque. Pellentesque eleifend dolor vitae est pretium, in tincidunt nisi feugiat. Etiam gravida dictum felis, et convallis sapien sagittis suscipit. Pellentesque tincidunt turpis quis aliquet aliquam. Proin sed facilisis massa. Maecenas gravida justo sit amet sapien malesuada pellentesque. Aenean eget elit vitae dui bibendum vehicula nec ac justo. Aliquam facilisis lorem tellus, ut porta sem dignissim vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus at nulla vel auctor. Fusce lorem turpis, sodales sed auctor vitae, tempor sed mauris. Sed nec convallis massa, eu interdum massa. Etiam ut efficitur massa, vitae varius nisi. Phasellus id metus a orci elementum porttitor a vitae nibh. ',
+      title: 'Article 9',
+    },
+    {
+      id: 'article-10',
+      author: 'Emilia Clarke',
+      tags: 'musical',
+      content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condimentum neque id nunc sollicitudin dictum. Etiam iaculis volutpat lectus quis viverra. Pellentesque sit amet porttitor felis, in tristique neque. Pellentesque eleifend dolor vitae est pretium, in tincidunt nisi feugiat. Etiam gravida dictum felis, et convallis sapien sagittis suscipit. Pellentesque tincidunt turpis quis aliquet aliquam. Proin sed facilisis massa. Maecenas gravida justo sit amet sapien malesuada pellentesque. Aenean eget elit vitae dui bibendum vehicula nec ac justo. Aliquam facilisis lorem tellus, ut porta sem dignissim vulputate. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus at nulla vel auctor. Fusce lorem turpis, sodales sed auctor vitae, tempor sed mauris. Sed nec convallis massa, eu interdum massa. Etiam ut efficitur massa, vitae varius nisi. Phasellus id metus a orci elementum porttitor a vitae nibh. ',
+      title: 'Article 10',
+    },
+
   ];
 
   createPosts();
@@ -343,16 +402,23 @@ function titleClickHandler(event) {
   function createPosts() {
     const postDiv = document.querySelector('.posts');
     for (let i = 0; i < articlesArray.length; i++) {
+      const article = articlesArray[i];
       const mainArticleContainer = document.createElement('article');
       const postTitleDiv = document.createElement('h3');
       const postAuthorDiv = document.createElement('div');
       const postContentDiv = document.createElement('div');
       const tagDiv = document.createElement('div');
+      const tagListUl = document.createElement('ul');
+      tagListUl.className = 'list list-horizontal';
       postAuthorDiv.className = 'post-author';
       postContentDiv.className = 'post-content';
       postTitleDiv.className = 'post-title';
+      postTitleDiv.innerHTML = article.title;
       tagDiv.className = 'post-tags';
-      tagDiv.innerHTML = '<p><strong>Tags:</strong></p>';
+      const tagParagraph = document.createElement('p');
+      tagParagraph.innerHTML = 'Tags:';
+      tagDiv.appendChild(tagParagraph);
+      tagDiv.appendChild(tagListUl);
       mainArticleContainer.className = 'post';
       mainArticleContainer.id = articlesArray[i].id;
       mainArticleContainer.setAttribute('data-tags', articlesArray[i].tags);
@@ -361,9 +427,13 @@ function titleClickHandler(event) {
       mainArticleContainer.appendChild(postTitleDiv);
       mainArticleContainer.appendChild(postAuthorDiv);
       mainArticleContainer.appendChild(postContentDiv);
+      mainArticleContainer.appendChild(tagDiv);
       postDiv.appendChild(mainArticleContainer);
-      postDiv.appendChild(tagDiv);
-    console.log(mainArticleContainer);
+      if (articlesArray[i] === articlesArray[0]) {
+        mainArticleContainer.className = 'post active';
+
+
+      }
     }
   }
 }
