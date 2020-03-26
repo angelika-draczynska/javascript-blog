@@ -15,6 +15,12 @@ $font-text: "Source Sans Pro", sans-serif;
 *::before,
 *::after {
   box-sizing: border-box;
+  list-style: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: #06c;
 }
 
 body {
@@ -36,6 +42,7 @@ body {
   text-transform: uppercase;
   font-family: $font-header;
   font-weight: 600;
+
   span {
     text-transform: none;
     font-weight: 400;
@@ -83,6 +90,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
   .active {
     font-weight: bold;
   }
@@ -92,6 +100,22 @@ body {
   li {
     display: inline-block;
   }
+}
+
+.tag-size-1 {
+  font-size: 100%;
+}
+.tag-size-2 {
+  font-size: 110%;
+}
+.tag-size-3 {
+  font-size: 120%;
+}
+.tag-size-4 {
+  font-size: 130%;
+}
+.tag-size-5 {
+  font-size: 140%;
 }
 
 /* Authors */
@@ -106,6 +130,7 @@ body {
 
 .post {
   display: none;
+
   &.active {
     display: block;
   }
@@ -117,6 +142,7 @@ body {
 
 .post-tags {
   display: flex;
+
   p {
     margin: 0 10px 0 0;
   }
